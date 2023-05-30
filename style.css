@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --bg-color: #121214;
+    --text-color: #FFFFFF;
+    --base-color: 194;
+    --primary-color: hsl(var(--base-color), 100%, 63%);
+    --second-color: hsla(var(--base-color), 100%, 63%, 0.13);
+
+}
+
+body {
+    background-color: var(--bg-color);
+    height: 100vh;
+
+    display: grid;
+
+    
+
+}
+.hide {
+    display: none;
+}
+main {
+    align-self: center;
+    justify-self: center;    
+}
+
+footer {
+    align-self: flex-end;
+    justify-self: flex-end;
+    padding: 0 4rem 3.2rem 0;
+}
+
+#timer {
+    display: flex;
+
+    font-family: "Roboto", sans-serif;
+    line-height: 10.4rem;
+    font-size: clamp(7rem, 1rem + 10vw, 8.8rem);
+
+    color: var(--text-color);
+    
+}
+
+#controls {
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--second-color);
+
+    border-radius: 9999px;
+
+    width: clamp(18rem, 15rem + 10vw, 22.8rem);
+    height: clamp( 8rem, 2rem + 10vw, 10.8rem);
+
+    margin-top: 1.6rem;
+
+}
+
+#controls svg {
+    width: clamp(5rem, 1rem + 10vw, 6.4rem);
+}
+
+.play svg path,
+.pause svg path,
+.sound-on svg path{
+    fill: var(--primary-color)
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
