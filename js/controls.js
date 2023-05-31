@@ -5,4 +5,4 @@ function resetControls (){
     buttonPause.classList.add("hide")
 }
 
-export default resetControls
+export default resetControls //default export
