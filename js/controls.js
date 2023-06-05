@@ -35,4 +35,3 @@ export default function Controls ({
 
     return {reset, play, pause, getMinutes}
 }
-//export default resetControls
