@@ -1,6 +1,6 @@
 import { Sounds } from "./sounds.js"
 
-const sounds = Sounds({})
+const sounds = Sounds()
 
 export default function Timer({
     secondsDisplay,
